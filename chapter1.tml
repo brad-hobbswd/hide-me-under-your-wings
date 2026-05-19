@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width,initial-scale=1.0">
+
+<title>
+Chapter 1 | The Battle That Broke Her Strength
+</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+:root{
+
+--bg:#f7f3ef;
+--paper:#fffaf6;
+--navy:#1e3240;
+--gold:#d8ae63;
+--text:#333;
+--shadow:0 10px 30px rgba(0,0,0,.10);
+
+}
+
+body{
+
+font-family:Georgia,serif;
+background:var(--bg);
+color:var(--text);
+line-height:2;
+
+}
+
+.banner{
+
+height:35vh;
+
+background:
+
+linear-gradient(
+rgba(0,0,0,.25),
+rgba(0,0,0,.45)
+),
+
+url("images/banner.png");
+
+background-size:cover;
+background-position:center;
+
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+
+}
+
+.banner h1{
+
+color:white;
+
+font-size:
+clamp(
+2rem,
+5vw,
+4rem
+);
+
+max-width:900px;
+
+}
+
+.container{
+
+max-width:900px;
+
+margin:60px auto;
+
+padding:45px;
+
+background:var(--paper);
+
+border-radius:25px;
+
+box-shadow:
+var(--shadow);
+
+opacity:0;
+
+transform:
+translateY(30px);
+
+transition:1.2s;
+
+}
+
+.container.show{
+
+opacity:1;
+
+transform:
+translateY(0);
+
+}
+
+.container p{
+
+margin-bottom:28px;
+
+font-size:1.08rem;
+
+}
+
+.scripture{
+
+padding:25px;
+
+margin:35px 0;
+
+border-left:4px solid
+var(--gold);
+
+background:#fff;
+
+font-style:italic;
+
+}
+
+.reader{
+
+margin-top:50px;
+
+padding:30px;
+
+border-radius:18px;
+
+background:#f9f4eb;
+
+}
+
+footer{
+
+margin-top:80px;
+
+background:var(--navy);
+
+padding:40px;
+
+color:white;
+
+text-align:center;
+
+}
+
+.page-nav{
+
+display:flex;
+
+justify-content:
+space-between;
+
+margin-bottom:25px;
+
+}
+
+.page-nav a{
+
+text-decoration:none;
+
+color:white;
+
+padding:12px 22px;
+
+border:1px solid
+rgba(255,255,255,.3);
+
+border-radius:40px;
+
+}
+
+.page-nav a:hover{
+
+background:
+rgba(255,255,255,.15);
+
+}
+
+@media(max-width:768px){
+
+.container{
+
+margin:30px 15px;
+padding:30px;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header class="banner">
+
+<h1>
+
+Chapter 1:
+The Battle That Broke Her Strength
+
+</h1>
+
+</header>
+
+<section
+class="container"
+id="fade">
+
+<p>
+
+Ashley used to believe she was unshakeable. She was always the one others came to for advice, comfort, prayer, or emotional support. She never wanted to be seen as weak. She never showed tears, even when life cut deeply.
+
+Every person has a limit. Seasons eventually arrive where the weight becomes heavier than the strength a person possesses.
+
+</p>
+
+<p>
+
+For Ashley, that season came quietly.
+
+Small stresses.
+
+Small conflicts.
+
+Small disappointments.
+
+Then everything snowballed into a storm that swallowed her peace.
+
+</p>
+
+<p>
+
+Pressure at work increased.
+
+Expectations tightened.
+
+People needed more.
+
+She poured into everyone around her and slowly began losing herself in the process.
+
+</p>
+
+<p>
+
+Then personal battles arrived.
+
+Family disagreements.
+
+Broken promises.
+
+People she supported refusing to support her.
+
+Phone calls draining every ounce of strength.
+
+Moments where she felt invisible even in crowded rooms.
+
+</p>
+
+<p>
+
+Then came the heartbreak nobody talked about.
+
+The kind that builds walls around the heart.
+
+The kind that causes people to question their worth.
+
+Ashley felt herself unraveling piece by piece.
+
+</p>
+
+<p>
+
+One evening she sat in her car and could not make herself walk inside.
+
+She gripped the steering wheel.
+
+She cried until breathing hurt.
+
+Then whispered:
+
+</p>
+
+<div class="scripture">
+
+"Lord Jesus... I cannot take another hit. I have nothing left."
+
+</div>
+
+<p>
+
+For the first time in her life Ashley admitted defeat.
+
+Heaven saw surrender.
+
+Surrender became the place where healing began.
+
+</p>
+
+<div class="scripture">
+
+"He shall cover you with His feathers. Under His wings you shall find refuge."
+
+Psalm 91:4
+
+</div>
+
+<p>
+
+Ashley repeated those words until breathing slowed.
+
+Something shifted.
+
+Not dramatically.
+
+Not instantly.
+
+Gently.
+
+She sensed Jesus whisper:
+
+</p>
+
+<div class="scripture">
+
+"You do not have to fight this alone."
+
+</div>
+
+<p>
+
+That became the beginning of her hiding place.
+
+Battles did not disappear.
+
+Shelter simply appeared.
+
+</p>
+
+<div class="reader">
+
+<p>
+
+To the reader who feels like Ashley:
+
+</p>
+
+<p>
+
+The battle surrounding you may feel crushing.
+
+Yet God still sees every tear.
+
+Every hidden wound.
+
+Every exhausted breath.
+
+Psalm 34:17 says:
+
+"The righteous cry out and the Lord hears and delivers them out of all their troubles."
+
+He hears you.
+
+He sees you.
+
+Healing remains ahead.
+
+</p>
+
+</div>
+
+</section>
+
+<footer>
+
+<div class="page-nav">
+
+<a href="introduction.html">
+
+← Introduction
+
+</a>
+
+<a href="chapter2.html">
+
+Chapter 2 →
+
+</a>
+
+</div>
+
+<p>
+
+© 2026 Bradley Hobbs
+
+</p>
+
+</footer>
+
+<script>
+
+const section=
+document.getElementById(
+"fade"
+);
+
+const observer=
+new IntersectionObserver(
+entries=>{
+
+entries.forEach(
+entry=>{
+
+if(
+entry.isIntersecting
+){
+
+entry.target.classList.add(
+"show"
+);
+
+}
+
+});
+
+});
+
+observer.observe(
+section
+);
+
+</script>
+
+</body>
+</html>
