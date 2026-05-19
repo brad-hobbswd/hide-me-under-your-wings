@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width,initial-scale=1.0">
+
+<title>
+Closing
+</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+:root{
+
+--bg:#f7f3ef;
+--paper:#fffaf6;
+--navy:#1e3240;
+--gold:#d8ae63;
+--text:#333;
+--shadow:0 10px 30px rgba(0,0,0,.10);
+
+}
+
+body{
+
+font-family:Georgia,serif;
+background:var(--bg);
+color:var(--text);
+line-height:2;
+
+}
+
+.banner{
+
+height:35vh;
+
+background:
+
+linear-gradient(
+rgba(0,0,0,.25),
+rgba(0,0,0,.45)
+),
+
+url("images/banner.png");
+
+background-size:cover;
+background-position:center;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+padding:20px;
+
+text-align:center;
+
+}
+
+.banner h1{
+
+color:white;
+
+font-size:
+clamp(
+2rem,
+5vw,
+4rem
+);
+
+}
+
+.container{
+
+max-width:900px;
+
+margin:60px auto;
+
+padding:45px;
+
+background:var(--paper);
+
+border-radius:25px;
+
+box-shadow:
+var(--shadow);
+
+opacity:0;
+
+transform:
+translateY(30px);
+
+transition:1.2s;
+
+}
+
+.container.show{
+
+opacity:1;
+
+transform:
+translateY(0);
+
+}
+
+.container p{
+
+margin-bottom:30px;
+
+font-size:1.08rem;
+
+}
+
+.quote{
+
+margin:40px 0;
+
+padding:25px;
+
+border-left:4px solid
+var(--gold);
+
+background:white;
+
+font-style:italic;
+
+}
+
+footer{
+
+margin-top:80px;
+
+background:var(--navy);
+
+padding:40px;
+
+color:white;
+
+text-align:center;
+
+}
+
+.page-nav{
+
+display:flex;
+
+justify-content:
+space-between;
+
+margin-bottom:25px;
+
+}
+
+.page-nav a{
+
+text-decoration:none;
+
+color:white;
+
+padding:12px 22px;
+
+border-radius:40px;
+
+border:1px solid
+rgba(255,255,255,.3);
+
+}
+
+.page-nav a:hover{
+
+background:
+rgba(255,255,255,.15);
+
+}
+
+@media(max-width:768px){
+
+.container{
+
+margin:30px 15px;
+
+padding:30px;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header class="banner">
+
+<h1>
+
+Closing
+
+</h1>
+
+</header>
+
+<section
+class="container"
+id="fade">
+
+<p>
+
+Ashley's journey began in exhaustion, pain, and hidden battles.
+
+Fear surrounded her.
+
+Heartbreak surrounded her.
+
+Questions surrounded her.
+
+Yet every difficult season eventually led her beneath the wings of Jesus.
+
+</p>
+
+<p>
+
+Every cave became preparation.
+
+Every storm became growth.
+
+Every tear carried purpose.
+
+Healing slowly unfolded in places nobody else could see.
+
+</p>
+
+<div class="quote">
+
+"He shall cover you with His feathers, and under His wings shall you trust."
+
+Psalm 91:4
+
+</div>
+
+<p>
+
+Life rarely changes overnight.
+
+Restoration often arrives gently.
+
+Strength often rises quietly.
+
+Jesus continues working beneath the surface even during seasons where progress feels invisible.
+
+</p>
+
+<p>
+
+Your story is still being written.
+
+Your journey still carries purpose.
+
+Your hidden places still matter.
+
+</p>
+
+<p>
+
+Green pastures remain ahead.
+
+Peace remains ahead.
+
+Healing remains ahead.
+
+Freedom remains ahead.
+
+</p>
+
+<p>
+
+Continue trusting.
+
+Continue resting.
+
+Continue walking beneath His wings.
+
+</p>
+
+<p>
+
+The same Jesus who carried Ashley remains faithful to carry you.
+
+</p>
+
+</section>
+
+<footer>
+
+<div class="page-nav">
+
+<a href="prayer-for-safety.html">
+
+← Prayer
+
+</a>
+
+<a href="404.html">
+
+Finish →
+
+</a>
+
+</div>
+
+<p>
+
+© 2026 Bradley Hobbs
+
+</p>
+
+</footer>
+
+<script>
+
+const section=
+document.getElementById(
+"fade"
+);
+
+const observer=
+new IntersectionObserver(
+entries=>{
+
+entries.forEach(
+entry=>{
+
+if(
+entry.isIntersecting
+){
+
+entry.target.classList.add(
+"show"
+);
+
+}
+
+});
+
+});
+
+observer.observe(
+section);
+
+</script>
+
+</body>
+</html>
