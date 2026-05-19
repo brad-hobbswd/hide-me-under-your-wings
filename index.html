@@ -24,10 +24,10 @@ box-sizing:border-box;
 
 :root{
 
---gold:#d8ae63;
 --cream:#f7f3ef;
+--gold:#d8ae63;
 --navy:#152733;
---text:#3b3b3b;
+--text:#494949;
 
 --shadow:
 0 10px 30px
@@ -49,21 +49,19 @@ serif;
 background:
 var(--cream);
 
-overflow-x:hidden;
-
 color:
 var(--text);
+
+overflow-x:hidden;
 
 }
 
 
-/* hero */
+/* banner */
 
 .hero{
 
 line-height:0;
-
-position:relative;
 
 }
 
@@ -76,17 +74,15 @@ display:block;
 }
 
 
-/* button */
+/* button area */
 
 .buttonWrap{
 
 text-align:center;
 
-margin-top:-35px;
+margin-top:18px;
 
-position:relative;
-
-z-index:5;
+margin-bottom:10px;
 
 }
 
@@ -104,9 +100,9 @@ color:white;
 
 text-decoration:none;
 
-font-size:1rem;
-
 border-radius:50px;
+
+font-size:1rem;
 
 box-shadow:
 var(--shadow);
@@ -118,21 +114,21 @@ transition:.4s;
 .button:hover{
 
 transform:
-translateY(-6px);
+translateY(-5px);
 
 }
 
 
-/* intro */
+/* welcome */
 
 .welcome{
 
-max-width:900px;
+max-width:950px;
 
 margin:auto;
 
 padding:
-70px 35px;
+40px 35px 65px;
 
 text-align:center;
 
@@ -145,8 +141,7 @@ opacity:0;
 transform:
 translateY(30px);
 
-transition:
-1s;
+transition:1s;
 
 }
 
@@ -160,11 +155,11 @@ translateY(0);
 }
 
 
-/* divider */
+/* line */
 
 .divider{
 
-width:90px;
+width:120px;
 
 height:2px;
 
@@ -173,7 +168,9 @@ var(--gold);
 
 margin:
 0 auto
-30px;
+35px;
+
+opacity:.8;
 
 }
 
@@ -185,14 +182,11 @@ footer{
 background:
 var(--navy);
 
-padding:
-35px;
+color:white;
 
 text-align:center;
 
-color:white;
-
-margin-top:30px;
+padding:28px;
 
 }
 
@@ -200,12 +194,6 @@ margin-top:30px;
 /* mobile */
 
 @media(max-width:768px){
-
-.buttonWrap{
-
-margin-top:-22px;
-
-}
 
 .button{
 
@@ -219,11 +207,19 @@ font-size:.95rem;
 .welcome{
 
 padding:
-55px 25px;
+35px 25px 55px;
 
 font-size:1.05rem;
 
 line-height:1.9;
+
+}
+
+.divider{
+
+margin-bottom:25px;
+
+width:80px;
 
 }
 
@@ -239,7 +235,7 @@ line-height:1.9;
 
 <img
 src="F0C8E8F5-2649-4882-8FAF-25DF1C2D16BA.png"
-alt="Hide Me Under Your Wings Lord Banner"
+alt="Hide Me Under Your Wings Lord"
 class="heroBanner">
 
 </header>
