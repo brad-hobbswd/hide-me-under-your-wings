@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width,initial-scale=1.0">
+
+<title>
+Dedication | Hide Me Under Your Wings Lord
+</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+:root{
+
+--bg:#f7f3ef;
+--paper:#fffaf6;
+--navy:#1e3240;
+--gold:#d8ae63;
+--text:#333;
+--shadow:0 10px 30px rgba(0,0,0,.10);
+
+}
+
+body{
+
+font-family:Georgia,serif;
+background:var(--bg);
+color:var(--text);
+line-height:2;
+
+}
+
+.banner{
+
+height:35vh;
+
+background:
+
+linear-gradient(
+rgba(0,0,0,.25),
+rgba(0,0,0,.45)
+),
+
+url("images/banner.png");
+
+background-size:cover;
+background-position:center;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+}
+
+.banner h1{
+
+color:white;
+
+font-size:
+clamp(
+2rem,
+5vw,
+4rem
+);
+
+}
+
+.container{
+
+max-width:900px;
+
+margin:60px auto;
+
+padding:45px;
+
+background:var(--paper);
+
+border-radius:25px;
+
+box-shadow:
+var(--shadow);
+
+opacity:0;
+
+transform:
+translateY(30px);
+
+transition:1.2s;
+
+}
+
+.container.show{
+
+opacity:1;
+
+transform:
+translateY(0);
+
+}
+
+.container p{
+
+margin-bottom:25px;
+
+font-size:1.1rem;
+
+}
+
+footer{
+
+margin-top:80px;
+
+background:var(--navy);
+
+padding:40px;
+
+color:white;
+
+text-align:center;
+
+}
+
+.page-nav{
+
+display:flex;
+
+justify-content:
+space-between;
+
+margin-bottom:25px;
+
+}
+
+.page-nav a{
+
+text-decoration:none;
+
+color:white;
+
+padding:12px 22px;
+
+border:1px solid
+rgba(255,255,255,.3);
+
+border-radius:40px;
+
+}
+
+.page-nav a:hover{
+
+background:
+rgba(255,255,255,.15);
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header class="banner">
+
+<h1>
+Dedication
+</h1>
+
+</header>
+
+<section
+class="container"
+id="fade">
+
+<p>
+
+This book is dedicated to every person who has carried strength for everyone else while quietly fighting hidden battles.
+
+</p>
+
+<p>
+
+For every heart that smiled while hurting.
+
+For every soul that felt unseen.
+
+For every person who felt exhausted while continuing to give.
+
+</p>
+
+<p>
+
+May these pages remind you that healing remains possible.
+
+May you discover refuge beneath the wings of Jesus.
+
+May peace replace fear.
+
+May strength rise again.
+
+May you always remember that you are seen, valued, loved, and never alone.
+
+</p>
+
+</section>
+
+<footer>
+
+<div class="page-nav">
+
+<a href="contents.html">
+
+← Contents
+
+</a>
+
+<a href="introduction.html">
+
+Introduction →
+
+</a>
+
+</div>
+
+<p>
+
+© 2026 Bradley Hobbs
+
+</p>
+
+</footer>
+
+<script>
+
+const section=
+document.getElementById(
+"fade"
+);
+
+const observer=
+new IntersectionObserver(
+entries=>{
+
+entries.forEach(
+entry=>{
+
+if(
+entry.isIntersecting
+){
+
+entry.target.classList.add(
+"show"
+);
+
+}
+
+});
+
+});
+
+observer.observe(
+section
+);
+
+</script>
+
+</body>
+</html>
