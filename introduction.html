@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width,initial-scale=1.0">
+
+<title>
+Introduction | Hide Me Under Your Wings Lord
+</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+:root{
+
+--bg:#f7f3ef;
+--paper:#fffaf6;
+--navy:#1e3240;
+--gold:#d8ae63;
+--text:#333;
+--shadow:0 10px 30px rgba(0,0,0,.10);
+
+}
+
+body{
+
+font-family:Georgia,serif;
+background:var(--bg);
+color:var(--text);
+line-height:2;
+
+}
+
+.banner{
+
+height:35vh;
+
+background:
+
+linear-gradient(
+rgba(0,0,0,.25),
+rgba(0,0,0,.45)
+),
+
+url("images/banner.png");
+
+background-size:cover;
+background-position:center;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+}
+
+.banner h1{
+
+color:white;
+
+font-size:
+clamp(
+2rem,
+5vw,
+4rem
+);
+
+}
+
+.container{
+
+max-width:900px;
+
+margin:60px auto;
+
+padding:45px;
+
+background:var(--paper);
+
+border-radius:25px;
+
+box-shadow:
+var(--shadow);
+
+opacity:0;
+
+transform:
+translateY(30px);
+
+transition:1.2s;
+
+}
+
+.container.show{
+
+opacity:1;
+
+transform:
+translateY(0);
+
+}
+
+.container p{
+
+margin-bottom:28px;
+
+font-size:1.1rem;
+
+}
+
+footer{
+
+margin-top:80px;
+
+background:var(--navy);
+
+padding:40px;
+
+color:white;
+
+text-align:center;
+
+}
+
+.page-nav{
+
+display:flex;
+
+justify-content:
+space-between;
+
+margin-bottom:25px;
+
+}
+
+.page-nav a{
+
+text-decoration:none;
+
+color:white;
+
+padding:12px 22px;
+
+border:1px solid
+rgba(255,255,255,.3);
+
+border-radius:40px;
+
+}
+
+.page-nav a:hover{
+
+background:
+rgba(255,255,255,.15);
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header class="banner">
+
+<h1>
+
+Introduction
+
+</h1>
+
+</header>
+
+<section
+class="container"
+id="fade">
+
+<p>
+
+Life carries battles that many people never see.
+
+Some wounds happen openly.
+
+Others remain hidden beneath responsibilities, routines, ministry, expectations, and quiet smiles.
+
+Many people continue giving strength to everyone around them while secretly feeling empty themselves.
+
+</p>
+
+<p>
+
+Ashley's journey represents countless hearts that have felt overwhelmed, exhausted, betrayed, misunderstood, and emotionally worn down while trying to remain strong.
+
+Through every storm she discovers a truth found throughout scripture.
+
+God provides shelter.
+
+God provides refuge.
+
+God provides a hiding place.
+
+</p>
+
+<p>
+
+Psalm 91:4 declares:
+
+"He shall cover you with His feathers, and under His wings shall you trust."
+
+</p>
+
+<p>
+
+These pages are an invitation into healing.
+
+An invitation toward peace.
+
+An invitation toward rest beneath the covering of Jesus.
+
+No matter how heavy life feels today, His wings remain wide enough to carry every burden.
+
+</p>
+
+<p>
+
+Welcome to this journey.
+
+</p>
+
+</section>
+
+<footer>
+
+<div class="page-nav">
+
+<a href="dedication.html">
+
+← Dedication
+
+</a>
+
+<a href="chapter1.html">
+
+Chapter 1 →
+
+</a>
+
+</div>
+
+<p>
+
+© 2026 Bradley Hobbs
+
+</p>
+
+</footer>
+
+<script>
+
+const section=
+document.getElementById(
+"fade"
+);
+
+const observer=
+new IntersectionObserver(
+entries=>{
+
+entries.forEach(
+entry=>{
+
+if(
+entry.isIntersecting
+){
+
+entry.target.classList.add(
+"show"
+);
+
+}
+
+});
+
+});
+
+observer.observe(
+section
+);
+
+</script>
+
+</body>
+</html>
