@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width,initial-scale=1.0">
+
+<title>
+Chapter 9 | Restored Strength Rising Again
+</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+:root{
+
+--bg:#f7f3ef;
+--paper:#fffaf6;
+--navy:#1e3240;
+--gold:#d8ae63;
+--text:#333;
+--shadow:0 10px 30px rgba(0,0,0,.10);
+
+}
+
+body{
+
+font-family:Georgia,serif;
+background:var(--bg);
+color:var(--text);
+line-height:2;
+
+}
+
+.banner{
+
+height:35vh;
+
+background:
+
+linear-gradient(
+rgba(0,0,0,.25),
+rgba(0,0,0,.45)
+),
+
+url("images/banner.png");
+
+background-size:cover;
+background-position:center;
+
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+
+padding:20px;
+
+}
+
+.banner h1{
+
+color:white;
+
+font-size:
+clamp(
+2rem,
+5vw,
+4rem
+);
+
+max-width:900px;
+
+}
+
+.container{
+
+max-width:900px;
+
+margin:60px auto;
+
+padding:45px;
+
+background:var(--paper);
+
+border-radius:25px;
+
+box-shadow:
+var(--shadow);
+
+opacity:0;
+
+transform:
+translateY(30px);
+
+transition:1.2s;
+
+}
+
+.container.show{
+
+opacity:1;
+
+transform:
+translateY(0);
+
+}
+
+.container p{
+
+margin-bottom:28px;
+
+font-size:1.08rem;
+
+}
+
+.scripture{
+
+padding:25px;
+
+margin:35px 0;
+
+background:#fff;
+
+border-left:4px solid
+var(--gold);
+
+font-style:italic;
+
+}
+
+.reader{
+
+margin-top:50px;
+
+padding:30px;
+
+border-radius:18px;
+
+background:#f9f4eb;
+
+}
+
+footer{
+
+margin-top:80px;
+
+background:var(--navy);
+
+padding:40px;
+
+color:white;
+
+text-align:center;
+
+}
+
+.page-nav{
+
+display:flex;
+
+justify-content:
+space-between;
+
+margin-bottom:25px;
+
+}
+
+.page-nav a{
+
+text-decoration:none;
+
+color:white;
+
+padding:12px 22px;
+
+border-radius:40px;
+
+border:1px solid
+rgba(255,255,255,.3);
+
+}
+
+.page-nav a:hover{
+
+background:
+rgba(255,255,255,.15);
+
+}
+
+@media(max-width:768px){
+
+.container{
+
+margin:30px 15px;
+padding:30px;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header class="banner">
+
+<h1>
+
+Chapter 9:
+Restored Strength Rising Again
+
+</h1>
+
+</header>
+
+<section
+class="container"
+id="fade">
+
+<p>
+
+Ashley woke one morning sensing something had changed.
+
+The heaviness that had followed her for months no longer felt overwhelming.
+
+The exhaustion.
+
+The fear.
+
+The heartbreak.
+
+The loneliness.
+
+Something had lifted.
+
+Not instantly.
+
+Not overnight.
+
+Slowly.
+
+Steadily.
+
+Like sunrise after a long night.
+
+</p>
+
+<div class="scripture">
+
+"You, who have shown me great and severe troubles, shall revive me again."
+
+Psalm 71:20
+
+</div>
+
+<p>
+
+Ashley recognized that restoration had begun reaching every area of life.
+
+Thoughts felt clearer.
+
+Peace came easier.
+
+Strength felt different.
+
+Her soul finally breathed again.
+
+</p>
+
+<p>
+
+Looking back, she saw every battle differently.
+
+The betrayals.
+
+The tears.
+
+The hidden cave seasons.
+
+The painful nights.
+
+None of those moments had been wasted.
+
+Every season had shaped her.
+
+</p>
+
+<div class="scripture">
+
+"But those who wait on the Lord shall renew their strength;
+
+they shall mount up with wings like eagles."
+
+Isaiah 40:31
+
+</div>
+
+<p>
+
+Gratitude began replacing grief.
+
+Ashley started writing down every moment where God remained faithful.
+
+Even difficult memories looked different now.
+
+She could see His hand where once she only saw pain.
+
+</p>
+
+<p>
+
+Strength also changed her relationships.
+
+She encouraged people differently.
+
+She loved people differently.
+
+She carried compassion differently.
+
+Healing had created room for overflow.
+
+</p>
+
+<div class="scripture">
+
+"My cup runs over.
+
+Surely goodness and mercy shall follow me all the days of my life."
+
+Psalm 23:5-6
+
+</div>
+
+<p>
+
+Ashley realized restoration was not simply survival.
+
+Restoration meant becoming stronger, wiser, and freer than before.
+
+</p>
+
+<div class="reader">
+
+<p>
+
+To the reader waiting for strength:
+
+</p>
+
+<p>
+
+Restoration remains possible.
+
+The nights of tears are not wasted.
+
+The hidden seasons are not forgotten.
+
+Strength rises again beneath His wings.
+
+Continue trusting.
+
+Continue resting.
+
+Continue walking.
+
+Joy and renewal remain ahead.
+
+</p>
+
+</div>
+
+</section>
+
+<footer>
+
+<div class="page-nav">
+
+<a href="chapter8.html">
+
+← Chapter 8
+
+</a>
+
+<a href="chapter10.html">
+
+Chapter 10 →
+
+</a>
+
+</div>
+
+<p>
+
+© 2026 Bradley Hobbs
+
+</p>
+
+</footer>
+
+<script>
+
+const section=
+document.getElementById(
+"fade"
+);
+
+const observer=
+new IntersectionObserver(
+entries=>{
+
+entries.forEach(
+entry=>{
+
+if(
+entry.isIntersecting
+){
+
+entry.target.classList.add(
+"show"
+);
+
+}
+
+});
+
+});
+
+observer.observe(
+section);
+
+</script>
+
+</body>
+</html>
