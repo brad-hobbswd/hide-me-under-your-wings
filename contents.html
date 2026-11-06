@@ -235,6 +235,30 @@ footer{margin-top:0;padding:34px 24px;}
 @media(max-width:900px){.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;}.container{padding:42px 24px 58px;}}
 @media(max-width:600px){.site-nav{gap:10px;padding:14px 8px;}.site-nav a{font-size:.88rem;padding:8px 5px;}.top{height:30vh;}.container{padding:32px 18px 46px;}.contents-intro{margin-bottom:26px;}.contents-intro p{font-size:1rem;}.grid{grid-template-columns:1fr;gap:14px;}.card{min-height:88px;padding:18px 20px;border-radius:12px;}.card a{min-height:48px;font-size:1.08rem;}}
 
+
+/* Shared navigation remains visible while readers scroll */
+.site-nav{
+ position:sticky;top:0;z-index:1000;
+ display:flex;justify-content:center;align-items:center;gap:clamp(24px,4vw,58px);
+ width:100%;min-height:58px;padding:12px 20px;
+ background:rgba(21,39,51,.97);
+ border-top:3px solid var(--gold);
+ box-shadow:0 7px 20px rgba(0,0,0,.14);
+}
+.site-nav a{
+ color:#fff;text-decoration:none;font-family:Georgia,serif;
+ font-size:1rem;font-weight:bold;letter-spacing:.04em;
+ padding:7px 4px;border-bottom:2px solid transparent;
+ transition:color .2s,border-color .2s;
+}
+.site-nav a:hover,.site-nav a[aria-current="page"]{
+ color:var(--gold);border-bottom-color:var(--gold);
+}
+@media(max-width:600px){
+ .site-nav{min-height:52px;gap:28px;padding:10px 14px;}
+ .site-nav a{font-size:.92rem;}
+}
+
 </style>
 
 </head>
@@ -253,9 +277,10 @@ Contents
 
 <nav class="site-nav" aria-label="Main navigation">
 <a href="index.html">Home</a>
-<a href="contents.html" aria-current="page">Table of Contents</a>
-<a href="chapter1.html">Begin Reading</a>
+<a href="contents.html">Table of Contents</a>
 </nav>
+
+
 
 <section class="container">
 
