@@ -39,28 +39,10 @@ color:var(--text);
 
 }
 
-.top{
-
-height:40vh;
-
-background:
-
-linear-gradient(
-rgba(0,0,0,.20),
-rgba(0,0,0,.45)
-),
-
-url("images/banner.png");
-
-background-size:cover;
-background-position:center;
-
-display:flex;
-
-justify-content:center;
-align-items:center;
-
-}
+.hero{position:relative;width:100%;overflow:hidden;background:var(--navy);}
+.heroBanner{display:block;width:100%;height:auto;max-height:420px;object-fit:cover;object-position:center;}
+.hero-title{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;padding:20px;background:linear-gradient(rgba(0,0,0,.08),rgba(0,0,0,.25));}
+.hero-title h1{color:#fff;text-align:center;text-shadow:0 2px 12px rgba(0,0,0,.55);font-size:clamp(2rem,5vw,4rem);letter-spacing:2px;}
 
 .top h1{
 
@@ -197,15 +179,7 @@ text-align:center;
 
 }
 
-@media(max-width:768px){
-
-.top{
-
-height:32vh;
-
-}
-
-}
+@media(max-width:768px){.heroBanner{min-height:150px;object-fit:cover;}.container{padding-top:34px;}}
 
 
 /* Navigation sits immediately below the banner, matching the landing page */
@@ -265,14 +239,9 @@ footer{margin-top:0;padding:34px 24px;}
 
 <body>
 
-<header class="top">
-
-<h1>
-
-Contents
-
-</h1>
-
+<header class="hero">
+<img src="F0C8E8F5-2649-4882-8FAF-25DF1C2D16BA.png" alt="Hide Me Under Your Wings Lord book banner" class="heroBanner">
+<div class="hero-title"><h1>Table of Contents</h1></div>
 </header>
 
 <nav class="site-nav" aria-label="Main navigation">
