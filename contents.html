@@ -398,3 +398,21 @@ card
 
 </body>
 </html>
+
+
+/* Position the Table of Contents title above the wing artwork */
+.hero-title{
+  align-items:flex-start !important;
+  justify-content:center !important;
+  padding:clamp(22px,4vw,46px) 20px 0 !important;
+  background:linear-gradient(180deg,rgba(0,0,0,.34) 0%,rgba(0,0,0,.08) 38%,transparent 65%) !important;
+}
+.hero-title h1{
+  margin:0 auto;
+  text-align:center;
+  line-height:1.15;
+  text-shadow:0 3px 14px rgba(0,0,0,.65);
+}
+@media(max-width:600px){
+  .hero-title{padding:18px 14px 0 !important;}
+}
