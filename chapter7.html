@@ -206,6 +206,11 @@ padding:30px;
 
 }
 
+/* Persistent navigation beneath the book banner */
+.site-nav{position:sticky;top:0;z-index:1000;display:flex;justify-content:center;align-items:center;gap:clamp(24px,4vw,58px);width:100%;min-height:58px;padding:12px 20px;background:rgba(21,39,51,.97);border-top:3px solid var(--gold);box-shadow:0 7px 20px rgba(0,0,0,.14);}
+.site-nav a{color:#fff;text-decoration:none;font-family:Georgia,serif;font-size:1rem;font-weight:bold;letter-spacing:.04em;padding:7px 4px;border-bottom:2px solid transparent;transition:color .2s,border-color .2s;}
+.site-nav a:hover,.site-nav a[aria-current="page"]{color:var(--gold);border-bottom-color:var(--gold);}
+@media(max-width:600px){.site-nav{min-height:52px;gap:28px;padding:10px 14px;}.site-nav a{font-size:.92rem;}}
 </style>
 
 </head>
@@ -222,6 +227,8 @@ Covered Even When People Did Not Understand
 </h1>
 
 </header>
+
+<nav class="site-nav" aria-label="Main navigation"><a href="index.html">Home</a><a href="contents.html">Table of Contents</a></nav>
 
 <section
 class="container"
