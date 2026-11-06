@@ -207,6 +207,34 @@ height:32vh;
 
 }
 
+
+/* Navigation sits immediately below the banner, matching the landing page */
+.site-nav{
+ display:flex;justify-content:center;align-items:center;gap:clamp(22px,4vw,54px);
+ width:100%;padding:17px 22px;background:var(--navy);
+ border-top:3px solid var(--gold);box-shadow:0 8px 22px rgba(0,0,0,.10);
+}
+.site-nav a{color:#fff;text-decoration:none;font-family:Georgia,serif;font-size:1rem;font-weight:bold;letter-spacing:.04em;padding:8px 3px;border-bottom:2px solid transparent;transition:.2s;}
+.site-nav a:hover,.site-nav a[aria-current="page"]{color:var(--gold);border-bottom-color:var(--gold);}
+.container{max-width:1120px;padding:54px 28px 70px;}
+.contents-intro{max-width:760px;margin:0 auto 38px;text-align:center;}
+.contents-intro p{font-size:1.12rem;line-height:1.85;color:#555;}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;align-items:stretch;}
+.card{
+ position:relative;display:flex;align-items:center;justify-content:center;
+ min-height:132px;padding:28px 24px;background:var(--card);
+ border:1px solid rgba(216,174,99,.30);border-top:4px solid var(--gold);
+ border-radius:15px;text-align:center;box-shadow:var(--shadow);
+ opacity:1;transform:none;transition:transform .22s ease,box-shadow .22s ease,border-color .22s ease;
+}
+.card.show{opacity:1;transform:none;}
+.card:hover{transform:translateY(-5px);box-shadow:0 14px 34px rgba(0,0,0,.14);border-color:var(--gold);}
+.card a{display:flex;align-items:center;justify-content:center;min-height:72px;width:100%;color:var(--navy);font-size:1.16rem;line-height:1.45;font-weight:bold;text-decoration:none;}
+.card a:focus-visible,.site-nav a:focus-visible{outline:3px solid var(--gold);outline-offset:4px;border-radius:5px;}
+footer{margin-top:0;padding:34px 24px;}
+@media(max-width:900px){.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;}.container{padding:42px 24px 58px;}}
+@media(max-width:600px){.site-nav{gap:10px;padding:14px 8px;}.site-nav a{font-size:.88rem;padding:8px 5px;}.top{height:30vh;}.container{padding:32px 18px 46px;}.contents-intro{margin-bottom:26px;}.contents-intro p{font-size:1rem;}.grid{grid-template-columns:1fr;gap:14px;}.card{min-height:88px;padding:18px 20px;border-radius:12px;}.card a{min-height:48px;font-size:1.08rem;}}
+
 </style>
 
 </head>
@@ -223,15 +251,17 @@ Contents
 
 </header>
 
+<nav class="site-nav" aria-label="Main navigation">
+<a href="index.html">Home</a>
+<a href="contents.html" aria-current="page">Table of Contents</a>
+<a href="chapter1.html">Begin Reading</a>
+</nav>
+
 <section class="container">
 
-<a
-href="index.html"
-class="home">
-
-← Return Home
-
-</a>
+<div class="contents-intro">
+<p>Explore the journey through prayer, reflection, and the promise of God's protection. Select a section below to begin reading.</p>
+</div>
 
 <div class="grid">
 
