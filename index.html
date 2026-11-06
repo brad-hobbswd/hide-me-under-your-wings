@@ -367,6 +367,17 @@ width:80px;
 
 }
 
+
+/* Main navigation directly beneath the book artwork */
+.site-nav{
+ display:flex;justify-content:center;align-items:center;gap:clamp(22px,4vw,54px);
+ width:100%;padding:17px 22px;background:var(--navy);
+ border-top:3px solid var(--gold);box-shadow:0 8px 22px rgba(0,0,0,.10);
+}
+.site-nav a{color:#fff;text-decoration:none;font-family:Georgia,serif;font-size:1rem;font-weight:bold;letter-spacing:.04em;padding:8px 3px;border-bottom:2px solid transparent;transition:.2s;}
+.site-nav a:hover,.site-nav a[aria-current="page"]{color:var(--gold);border-bottom-color:var(--gold);}
+@media(max-width:600px){.site-nav{gap:10px;padding:14px 8px;}.site-nav a{font-size:.88rem;padding:8px 5px;}}
+
 </style>
 
 </head>
@@ -381,6 +392,12 @@ alt="Hide Me Under Your Wings Lord"
 class="heroBanner">
 
 </header>
+
+<nav class="site-nav" aria-label="Main navigation">
+<a href="index.html" aria-current="page">Home</a>
+<a href="contents.html">Table of Contents</a>
+<a href="chapter1.html">Begin Reading</a>
+</nav>
 
 
 <div class="buttonWrap">
